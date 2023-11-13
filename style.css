@@ -1,0 +1,375 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.custom-button {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-transform: capitalize;
+    background-color: #7c3aed;
+    color: #ffffff;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.custom-button:hover {
+    cursor: pointer;
+    background-color: #8b5cf6;
+}
+
+nav {
+    background-color: #7c3aed;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+nav ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+nav ul li:last-child a {
+    border: 1px solid #ffffff;
+    text-decoration: none;
+}
+
+nav ul li:last-child a:hover {
+    background-color: #ffffff;
+    color: #7c3aed;
+}
+
+.toggle-btn {
+    display: none;
+    margin-right: 20px;
+    justify-content: flex-end;
+}
+
+#menu-btn-toggle {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+#menu-btn-toggle:hover {
+    cursor: pointer;
+}
+
+header {
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+header div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header div:first-of-type {
+    align-items: flex-start;
+}
+
+header h1 {
+    font-size: 4.5rem;
+    text-transform: capitalize;
+}
+
+header img {
+    width: 75%;
+}
+
+#about-section {
+    background-color: #333333;
+    padding: 3rem 0;
+}
+
+#about-section .container {
+    display: flex;
+}
+
+#about-section .container div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-section img {
+    width: 75%;
+}
+
+#about-section h2,
+#about-section p {
+    color: #ffffff;
+}
+
+#about-section h2 {
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+#projects-section {
+    padding: 3rem 0;
+}
+
+#projects-section .project {
+    display: flex;
+    margin: 3rem 0;
+}
+
+#projects-section .project div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects-section img {
+    width: 90%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+#projects-section h2 {
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #7c3aed;
+}
+
+#projects-section h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #7c3aed;
+}
+
+#contact-section {
+    background-color: #333333;
+    padding: 3rem 0;
+}
+
+#contact-section h2,
+#contact-section li,
+#contact-section label {
+    color: #ffffff;
+}
+
+#contact-section h2 {
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#contact-section ul {
+    list-style-type: none;
+}
+
+#contact-section li {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+#contact-section li strong {
+    margin-bottom: 0.5rem;
+}
+
+#contact-section .contact-section-content {
+    display: flex;
+}
+
+#contact-section .contact-half-section {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-section form {
+    width: 75%;
+}
+
+#contact-section form div {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+}
+
+#contact-section form div:last-child {
+    display: block;
+}
+
+#contact-section form label {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+#contact-section form input,
+#contact-section form textarea {
+    padding: 5px;
+    border-radius: 0.25rem;
+}
+
+#contact-section form input {
+    height: 50px;
+}
+
+#contact-section form input:focus,
+#contact-section form textarea:focus {
+    outline: none;
+}
+
+#contact-section form button {
+    border: none;
+}
+
+footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        padding-bottom: 80px;
+        transition: all .5s;
+        background-color: #7c3aed;
+    }
+
+    .toggle-style {
+        left: 0;
+    }
+
+    .toggle-btn {
+        display: flex;
+        width: 75%;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    header div {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    #about-section .container {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #about-section .container div {
+        width: 100%;
+    }
+
+    #about-section h2 {
+        margin-top: 1rem;
+    }
+
+    #projects-section .project {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #projects-section .project:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+    #projects-section .project div {
+        width: 100%;
+    }
+
+    #projects-section img {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    #contact-section .contact-section-content {
+        flex-direction: column-reverse;
+    }
+
+    #contact-section .contact-half-section {
+        width: 100%;
+    }
+
+    #contact-section .contact-half-section:first-of-type {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #about-section h2,
+    #projects-section h2,
+    #contact-section h2 {
+        font-size: 2.5rem;
+    }
+
+    #contact-section form {
+        width: 100%;
+    }
+}
